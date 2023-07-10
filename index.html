@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <style>
+        div{
+            margin-bottom: 10px;
+        }
+    </style>
+    <h2>Registration form</h2>
+
+    <form action="form_action.php" method="get">
+        <div>
+            <label for="a" >Enter your name</label>
+            <input type="text" id="a" name="a" placeholder="Please enter your name" size="40" required>
+        </div>
+
+        <div>
+            <label for="dob">Date of birth</label><br>
+            <input type="date" id="dob" name="dob" max="1990-01-01">
+        </div>
+
+        <div>
+            <label for="ad">Admission date</label><br>
+            <input type="date" id="ad" name="ad" min="2023-01-02">
+        </div>
+
+        <div>
+            <label for="chout">Checkout</label><br>
+            <input type="datetime-local" id="chout" size="40" name="chout">   
+        </div>
+        
+        <div>
+            <label for="telnum">Telephone number</label><br>
+            <input type="tel" id="telnum" size="50" name="telnum" disabled>   
+        </div>
+
+        <div>
+            <label for="weburl">Website URL</label><br>
+            <input type="url" id="weburl" size="40" name="weburl">   
+        </div>
+
+        <div>
+            <label for="email">Email address</label><br>
+            <input type="email" id="email" size="40" name="email">   
+        </div>
+
+        <div>
+            <label for="pref">Prefered</label><br>
+            <select id="pref" name="pref">
+                <option value="op1">Option 1</option>
+                <option value="op2">Option 2</option>
+                <option value="op3">Option 3</option>
+            </select>   
+        </div>
+        <div>
+            <label for="add">Address</label><br>
+            <textarea id="add" name="add" rows="4" cols="50">
+            </textarea>
+        </div>
+        
+        <div>
+            <label>Choose your favorite:</label><br>
+            <input type="radio" id="html" name="flang" value="HTML">  
+            <label for="html">HTML</label>
+            <input type="radio" id="css" name="flang" value="CSS">  
+            <label for="css">CSS</label>
+            <input type="radio" id="js" name="flang" value="JS">  
+            <label for="js">JavaScript</label>
+        </div>
+
+        <div>
+            <label>Favorite framework:</label><br>
+            <input type="checkbox" id="react" name="react" value="REACT">  
+            <label for="react">React</label>
+            <input type="checkbox" id="vue" name="vuejs" value="VUEJS">  
+            <label for="vue">Vue</label>
+            <input type="checkbox" id="ang" name="angular" value="ANGULAR">  
+            <label for="ang">Angular</label>
+        </div>
+
+        <div>
+            <label for="pass">Enter your password</label><br>
+            <input type="password" id="pass" name="pass" maxlength="8">
+        </div>
+
+        <div>
+            <label for="satisfaction">Satisfaction</label><br>
+            <span>0</span>
+            <input type="range" id="satisfaction" name="satisfaction" value="10"  min="0" max="20">
+            <span>20</span>
+        </div>
+
+        <div>
+            <label for="qty">Quantity</label>
+            <input type="number" id="qty" name="qty" value="0" min="0" max="20" step="2">
+        </div>
+
+        <div>
+            <input type="submit" value="Submit data">
+            <input type="reset" value="Reset data">
+        </div>
+        
+    </form>
+
+</body>
+</html>
